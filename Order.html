@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sweet Spot | Order</title>
+    <link rel="stylesheet" href="orderStyling.css">
+    <script src="Functionality.js" defer></script>
+
+</head>
+<body>
+    
+    <div id="orderBody">
+    <!--navigation menu-->
+    <nav>
+        <a href="Home.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Menu.html">MENU</a>
+        <a href="Order.html">ORDER</a>
+        <a href="Contact.html">CONTACT</a>
+    </nav>
+    <!--title-->
+    <h1>ORDER</h1>
+    <!--div for order info-->
+    <div id="mainDiv" >
+    
+    <!--division for the section that shows the items ordered as well as the total-->
+    <div id="ordInfo" class="toHalf">
+        <p class="infoTitle">Order information</p>
+        <div id="addedItems" >
+
+        </div>
+        
+        <div id="totalPrice">
+
+        </div>
+    </div>
+
+    
+    <!--division for the section with the form-->
+    <div id="allEntries" class="toHalf">
+        <!--div for customer info-->
+        <form id="orderForm">
+            <input name="name" type="text" placeholder="Name *" class="mandatory"><br>
+            <input name="phoneNumber" type="tel" placeholder="Phone Number *" class="mandatory"><br>
+            <input name="address" type="text" class="address mandatory" placeholder="Address "><br>
+            <input name="city" type="text" class="address mandatory" placeholder="City "><br>
+            <input name="province" type="text" class="address mandatory" placeholder="Province "><br>
+            <input name="pickupDate" type="date" placeholder="Pickup date" class="mandatory"><br>
+            <input name="pickupCheckbox" class="checkbox" type="checkbox"><label for="pickupCheckbox">Pick up from shop</label>
+       
+            <input name="cardholderName" type="text" placeholder="Cardholder Name*" class="mandatory"><br>
+            <input name="cardNumber" type="text" placeholder="Card Number*" class="mandatory"><br>
+            <input name="code" type="text" placeholder="Code*" class="code mandatory">
+            <input name="expiryDay" type="text" placeholder="DD*" class="day mandatory">
+            <input name="expiryMonth" type="text" placeholder="MM*" class="day mandatory"><br>
+            
+            <!--button to confirm the order-->
+            <button type="button" id="confirm" onclick="confirmOrder()">Confirm payment</button>
+        
+        </form>
+    </div>
+
+
+    <!--division to print the order history-->
+    
+    
+    </div>
+    
+   
+</div>
+
+<script>
+    // Parse URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const items = urlParams.get('items');
+    const totalCost = urlParams.get('totalCost');
+
+    // Display items and total cost
+    document.getElementById('addedItems').innerText = `${items || 'No items selected'}`;
+    document.getElementById('totalPrice').innerText = `Total Cost: ${totalCost || '0.00'}`;
+</script>
+<div id="history">
+    <h3>Order History</h3>
+</div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/*Details for the overall navigation bar*/
+nav{
+    background-color: #F55A7A;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+}
+
+/*Css for each element in the navigation bar*/
+nav a{
+    text-decoration: none; /* Remove underline */
+    color:#FEE9E0;
+    display: inline-block;
+    font-size: 200%;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: box-shadow 0.3s;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+/*Shadow for when you hover over the element in the nav bar*/
+nav a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+/*Configuration for a smaller screen view*/
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 2vh 0;
+    }
+}
+
+
+/*Setting the background image as well as configuration for the body*/
+body{
+    background-color: #FEE9E0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+#homeImg{
+    height: 900px;
+    width: 100%;
+    background-image: url("pinkpopsicle.jpg");
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    position: absolute;
+}
+
+/*h1 of the homeig div*/
+#homeImg h1{
+    margin-top: 25vh;
+    box-shadow: 0 0 40px #333;
+
+}
+
+/*Customizing the large home title*/
+.homeTitle{
+    background-color: #FFFAEC;
+    color: #F55A7A;
+    width:50%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 10vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.homeToCenter{
+    margin-top: 900px;
+    text-align: center;
+    height: 1200px;
+    max-width: 100%;
+}
+
+/*Designing the images to be added*/
+.toDivideLeftImg img,.toDivideRightImg img{
+    height: 20vh;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+/*The center text positioning*/
+.toDivideParagraph{
+    text-align: center; /* Center the text within its container */
+            width: 80%;
+            font-size: 2.75vh;
+            color:#F55A7A;
+            margin: 5%;
+            margin-left: 10%;
+            border: 2px solid #F55A7A;
+            box-shadow: 0 0 20px #333;
+}
+
+/*All images of the page to be symmetrical*/
+img{
+    border-radius: 15px;
+    border-style: groove;
+    border-color: #F55A7A;
+    border-width: 5px;
+}
+
+
+
+/*customizing the button*/
+.homePageBtn button{
+    color: white;
+    background-color: #D2C0EA;
+    border-radius: 15px;
+    border-color: #D2C0EA;
+    border-style: groove;
+    width: 20%;
+    margin-left: 10%;
+    margin-bottom: 100px;
+    height: 8vh;
+    font-size: 4vh;
+    transition: box-shadow 0.3s;
+    
+
+}
+
+/*Customizing for when you hover over the home btn*/
+.homePageBtn button:hover{
+    color:#D2C0EA;
+    background-color: #FEE9E0;}
+
+.toDivideParagraph button{
+    color: white;
+    background-color: #D2C0EA;
+    border-radius: 15px;
+    border-color: #D2C0EA;
+    border-style: groove;
+    width: 20%;
+    margin-top: 2vh;
+    height: 6vh;
+    font-size: 4vh;
+    transition: box-shadow 0.3s;
+}
+
+.toDivideParagraph button:hover{
+    color:#D2C0EA;
+    background-color: #FEE9E0;}
+
+
+    /*Configuration for a smaller screen view*/
+@media screen and (max-width: 1100px){
+    .toDivideLeftImg img,.toDivideRightImg img{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    nav a{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .homePageBtn{
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    
+    .homePageBtn{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 925px){
+    .homePageBtn{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    
+    nav{
+        height:32vh;
+    }
+    nav a{
+        width: 100%;
+    }
+    img{
+        margin-left: 20px;
+    }
+    .homePageBtn{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .homePageBtn{
+        margin-top: 250px;
+    }
+}
+@media screen and (max-width: 750px){
+    .homePageBtn{
+        margin-top: 400px;
+    }
+}
+@media screen and (max-width: 700px){
+    .homePageBtn{
+        margin-top: 600px;
+    }
+}
+@media screen and (max-width: 600px){
+    .homePageBtn{
+        margin-top: 700px;
+    }
+}

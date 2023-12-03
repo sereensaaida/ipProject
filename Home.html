@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sweet Spot | Home</title>
+    <link rel="stylesheet" href="homeStyling.css">
+    <script src="Functionality.js" ></script>
+</head>
+<body>
+    
+     <!--Navigation menu-->
+     <nav>
+        <a href="Home.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Menu.html">MENU</a>
+        <a href="Order.html">ORDER</a>
+        <a href="Contact.html">CONTACT</a>
+    </nav>
+
+    <!--division for the image + contains title-->
+    <div id="homeImg">
+
+        <h1 class="homeTitle">The Sweet Spot</h1>
+
+    </div>
+
+    <!--Small arrow to guide to scroll down-->
+    <div id="smlArrowIcon">
+        <img src="">
+    </div>
+
+    <!--division for the welcome message-->
+    <div class="homeToCenter">
+        <!-- 3 other divisions for the columns (images - welcome text - images)-->
+
+        <!--first row of images-->
+        <div class="toDivideLeftImg">
+            <img src="sideImg01.jpg">
+            <img src="sideImg02.jpg">
+        </div>
+
+        <!--div for the intro paragraph-->
+        <div class="toDivideParagraph">
+            <button id="introbtn" type="button" onclick="loadDoc()">Press me!</button>
+            <p id="homeInformation">
+                </p>
+        </div>
+
+        <!--second row of images-->
+        <div class="toDivideRightImg">
+            <img src="sideImg03.jpg">
+            <img src="sideImg04.jpg">
+        </div>
+    </div>
+    <!--division for buttons-->
+
+        <div class="homePageBtn">
+            <button id="menu" onclick="window.location.href='Menu.html';">Menu</button>
+            <button id="order" onclick="window.location.href='Order.html';">Order</button>
+            <button id="abt" onclick="window.location.href='About.html';">About</button>
+        </div>
+
+
+    <!--footer-->
+    <footer></footer>
+</body>
+</html>

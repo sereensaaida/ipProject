@@ -1,0 +1,210 @@
+/*Details for the overall navigation bar*/
+nav{
+    background-color: #F55A7A;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+}
+nav a{
+    text-decoration: none; /* Remove underline */
+    color:#FEE9E0;
+    display: inline-block;
+    font-size: 200%;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: box-shadow 0.3s;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+/*Shadow for when you hover over the element in the nav bar*/
+nav a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/*Setting the background as well as configuration for the body*/
+body{
+    background-color: #FFC9CE;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/*Desining the order info "panel*/
+#ordInfo{
+    background-color: #FFFAEC;
+    height: 600px;
+    width: 38%;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F55A7A;
+    border-radius: 10%;
+    
+}
+/*Title for the order info panel*/
+#ordInfo .infoTitle{
+    text-decoration-line: underline;
+}
+#mainDiv{
+    width:70%;
+    margin: auto;
+    
+}
+
+/*Desining the h1 of the page*/
+h1{
+    text-align: center;
+    font-size: 70px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(253, 240, 203);
+    color: #F55A7A;
+}
+
+
+/*Designing the section where the items in cart will be stored*/
+#addedItems{
+    height: 400px;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+
+/*Css for all the inputs for the order*/
+#allEntries input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*css for the checkbox*/
+#allEntries .checkbox{
+    width: 50px;
+    border-color: #F55A7A;
+    /*border doesn change ??*/
+}
+
+/*Labels for the entries*/
+#allEntries label{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10px;
+    color: #FFFAEC;
+    font-weight: bold;
+}
+
+
+/*input css*/
+input{
+    border: none;
+    color: #F55A7A;
+
+    border-radius: 10px;
+}
+
+
+#allEntries .code{
+    width: 250px;
+    color: #F55A7A;
+
+}
+
+/*place holder */
+::placeholder{
+    color: #F55A7A;
+
+}
+
+
+#allEntries .day{
+    width: 108px;
+}
+
+/*input css*/
+input[type=text], input[type=date], input[type=tel]{
+    background-color: #FFFAEC;
+    color: #F55A7A;
+
+}
+
+
+/*confirm container css*/
+#confirm{
+    height:50px;
+    width: 300px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    color: #FFFAEC;
+    background-color: #D2C0EA;
+    transition-duration: 0.4s;
+}
+
+#confirm:hover{
+    color:#D2C0EA;
+    background-color: #FEE9E0;
+}
+
+.toHalf{
+    float: left;
+    width: 50%;
+    padding-left: 2em;
+    margin-bottom: 20px;
+}
+
+/*Configuration for a smaller screen view*/
+@media screen and (max-width: 2000px){
+    .toHalf{
+        width: 45%;
+
+    }
+}
+@media screen and (max-width: 1200px){
+    .toHalf{
+        width: 100%;
+        padding-left: 0;
+        
+    }
+    #ordInfo{
+        width: 75%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1100px){
+    nav a{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media screen and (max-width: 850px){
+    nav{
+        height:32vh;
+    }
+    nav a{
+        width: 100%;
+    }
+}
+
+#history {
+    width:70%;
+    height: 20vh;
+    margin-top: 55%;
+    margin-left: 15%;
+    margin-bottom: 10vh;
+    padding: 10px;
+    text-align: center;
+    background-color: #FFFAEC;
+    color: #F55A7A;
+    border-radius: 20px;
+}
+
+

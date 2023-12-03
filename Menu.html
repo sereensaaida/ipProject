@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sweet Spot | Menu</title>
+    <link rel="stylesheet" href="menuStyling.css">
+    <script src="Functionality.js" defer></script>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/apple-chancery');
+    </style>
+
+
+</head>
+<body>
+    <!--navigation menu-->
+    <nav>
+        <a href="Home.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Menu.html">MENU</a>
+        <a href="Order.html">ORDER</a>
+        <a href="Contact.html">CONTACT</a>
+    </nav>
+
+    <!--div for the main section-->
+    <div id="menu">
+        <!--title-->
+        <h1>Menu</h1>
+
+        <!--div for the choosing cup section-->
+        <h2>Step 1: Select Your Cup</h2>
+        <div class="cup-grid">
+            <!--Making an id/class reffering to use the function in the javascript file to call a JSON array-->
+            <div id="cupOptions" class="cupRow"></div>  
+        </div>
+
+        <!--div for choosing main dessert-->
+        <h2>Step 2: Select Your Dessert</h2>
+        <div class="main-grid">
+            <div id="mainOptions" class="mainRow">
+            </div>
+            
+        </div>
+
+        <!--div for choosing topping-->
+        <h2>Step 3: Select Your Toppings</h2>
+        <div class="topping-grid">
+            <!--divided into 2 sections for easier placement-->
+            <!--adding the onlicks to call a function in the functionality file-->
+            <div id="toppingOptions" class="toppingRow">
+
+            </div>
+
+            <!--button to confirm the item and add to cart-->
+            <button  id="confirm" onclick="addToCart()">Add to cart</button>
+
+        </div>
+
+
+    <footer></footer>
+
+    
+</body>
+
+</html>

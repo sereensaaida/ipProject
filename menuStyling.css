@@ -1,0 +1,198 @@
+
+/*Details for the overall navigation bar*/
+nav{
+    background-color: #F55A7A;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+}
+
+/*Css for each element in the navigation bar*/
+nav a{
+    text-decoration: none; /* Remove underline */
+    color:#FEE9E0;
+    display: inline-block;
+    font-size: 200%;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: box-shadow 0.3s;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+/*Shadow for when you hover over the element in the nav bar*/
+nav a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+/*Configuration for a smaller screen view*/
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 2vh 0;
+    }
+}
+
+/*Setting the background as well as configuration for the body*/
+body{
+    background-color: #FFC9CE;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*css for the second heading*/
+h2{
+    color:#D2C0EA;
+    font-family: Apple Chancery,cursive;
+    font-size: 5vh;
+    width: fit-content;
+    margin: auto;
+    border: 2px solid #D2C0EA;
+    box-shadow: 0 0 20px #333;
+    padding: 1vh;
+    margin-bottom: 20px;
+}
+
+/*Hover for heading 2*/
+h2:hover{
+    box-shadow: 0 0 20px #D2C0EA;
+}
+
+
+/*Grid for the cup selections: designing row and grid*/
+.cup-Grid {
+    flex-direction: column;
+
+}
+
+.cupRow img{
+    justify-content: space-around;
+    margin-bottom: 5vh; /* Adjust the margin as needed */
+}
+
+
+/*Grid for the main selections: designing row and grid*/
+.main-Grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainRow {
+    justify-content: space-around;
+    margin-bottom: 5vh; /* Adjust the margin as needed */
+}
+
+/*Making the img a specific dimensions*/
+.mainRow > img{
+    width: 25%;
+    margin: 10px;
+    max-width: 100%; 
+  height: auto; 
+}
+
+/*Topping dimensions*/
+.topping-Grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.toppingRow {
+    justify-content: space-around;
+    margin-bottom: 5vh; /* Adjust the margin as needed */
+}
+
+.toppingRow > img{
+    width: 15%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*css for the confirm container*/
+#confirm{
+    height:50px;
+    width: 300px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    color: #FFFAEC;
+    background-color: #D2C0EA;
+    transition-duration: 0.4s;
+}
+
+/*Css for when you hover over the container*/
+#confirm:hover{
+    color:#D2C0EA;
+    background-color: #FEE9E0;
+}
+
+/*default image css for the items in the menu*/
+img {
+    width: 22%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+/*To make the image go from grayscaled to fully colored when you hover*/
+img:hover{
+    filter: grayscale(0%);
+
+}
+
+#menu{
+    text-align: center;
+}
+
+/*configuring the header 1 of the page*/
+h1{
+    transition: text-shadow 0.5s;
+    font-size: 20vh;
+    font-family:Apple Chancery, cursive;
+    color:#FEE9E0
+}
+
+h1:hover{
+    text-shadow: 0 0 10px #F55A7A; /* Add a glowing effect on hover */
+}
+
+
+/*Display and flex specifications for the grids and row, to allow easier responsive screen*/
+.cup-grid, .main-grid, .topping-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cupRow, .mainRow, .toppingRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cupRow input, .mainRow input, .toppingRow input {
+    margin-top: 5px; /* Add space between images and radio buttons */
+}
+
+radio{
+    margin-top: 10vh;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .cupRow input, .mainRow input, .toppingRow input {
+        order: 0; /* Reset order for smaller screens */
+        margin-top: 10px; /* Adjust space for smaller screens */
+    }
+}

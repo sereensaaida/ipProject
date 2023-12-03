@@ -1,0 +1,137 @@
+/*Details for the overall navigation bar*/
+
+nav{
+    background-color: #F55A7A;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+}
+
+/*Css for each element in the navigation bar*/
+
+nav a{
+    text-decoration: none; /* Remove underline */
+    color:#FEE9E0;
+    display: inline-block;
+    font-size: 200%;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: box-shadow 0.3s;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+/*Shadow for when you hover over the element in the nav bar*/
+
+nav a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/*Setting the background image as well as configuration for the body*/
+body{
+    background-image: url(pinkpopsicle.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Larger font size and more specifications for header 2*/
+h2{
+    color:#F55A7A;
+    font-size: 400%;
+    background-color: #FEE9E0;
+    box-shadow: 0 0 20px #F55A7A;
+    text-align: center;
+}
+
+
+/*Setting the background of the paragraph sections*/
+p{
+    background-color: #FEE9E0;
+}
+
+/*Setting the whole div to look put together*/
+.aboutParg{
+    background-color: #FEE9E0;
+    box-shadow: 0 0 20px #333;
+    margin: 5%;
+    padding: 2.5%;
+    border-radius: 15px;
+    
+
+}
+/*Editing the overall section that contains the aboutParg div*/
+.section{
+    margin-left: 15%;
+    margin-right: 15%;
+    box-sizing: border-box;
+    padding-left: 3vh;
+    height: 100vh;
+    padding-right: 3vh;
+   
+}
+
+/*Adding css to emphaisze headers in the table*/
+dt{
+    color:#F55A7A;
+    text-decoration: underline;
+}
+
+/*Designing the h3*/
+h3{
+    color:#F55A7A;
+    background-color: #FEE9E0;
+    box-shadow: 0 0 20px #F55A7A;
+    text-align: center;
+
+}
+
+/*Configuring the table to have proper css for a better view*/
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #F55A7A;
+    color: #FEE9E0;
+}
+/*adding a coloring effect to every even child of the table*/
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f55a7977
+}
+
+
+/*Configuration for a smaller screen view*/
+@media screen and (max-width: 1100px){
+    nav a{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media screen and (max-width: 850px){
+    nav{
+        height:32vh;
+    }
+    nav a{
+        width: 100%;
+    }
+    .section{
+        margin: auto;
+    }
+}
