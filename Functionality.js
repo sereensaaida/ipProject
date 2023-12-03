@@ -33,64 +33,60 @@ function confirmOrder() {
    
     
     
-
-    //print the order in the history 
-    //1- get the text from the cart part
-    let order = document.getElementById("addedItems").textContent;
-    let price = document.getElementById("totalPrice").textContent;
-    let name = document.getElementsByName('name').value;
-    //2- create paragraph
+    let name = document.getElementsByName('name')[0].value;
+    let phoneNumber = document.getElementsByName('phoneNumber')[0].value;
+    let address = document.getElementsByName('address')[0].value;
+    let city = document.getElementsByName('city')[0].value;
+    let province = document.getElementsByName('province')[0].value;
+    let pickupDate = document.getElementsByName('pickupDate')[0].value;
+    let pickupCheckbox = document.getElementsByName('pickupCheckbox')[0].checked ? 'Pick up from shop' : 'Delivery';
+    
+    // Create a JSON object
+    const orderData = {
+        order: document.getElementById("addedItems").textContent,
+        price: document.getElementById("totalPrice").textContent,
+        name: name,
+        phoneNumber: phoneNumber,
+        address: address,
+        city: city,
+        province: province,
+        pickupDate: pickupDate,
+        pickupOption: pickupCheckbox
+    };
+    
+    // Convert the JSON object to a string
+    const jsonString = `{
+        "order": "${document.getElementById("addedItems").textContent}",
+        "price": "${document.getElementById("totalPrice").textContent}",
+        "name": "${name}",
+        "phoneNumber": "${phoneNumber}",
+        "address": "${address}",
+        "city": "${city}",
+        "province": "${province}",
+        "pickupDate": "${pickupDate}",
+        "pickupOption": "${pickupCheckbox}"
+    }`;
+    
+    // Create a paragraph element
     const par = document.createElement("p");
-    const node = document.createTextNode(order + "\n" + price + "\n\n" + name);
+    
+    // Create a text node with the JSON string
+    const node = document.createTextNode(jsonString);
+    
+    // Append the text node to the paragraph
     par.appendChild(node);
-    //3- appending the paragraph to the history div
+    
+    // Append the paragraph to the history div
     document.getElementById("history").appendChild(par);
-
+    
     // Display order placed alert
     alert('Order has been placed!');
-
-    function confirmOrder() {
-        const name = document.getElementsByName('name').value;
-        const phoneNumber = document.getElementsByName('phoneNumber')[0].value;
-        const address = document.getElementsByName('address')[0].value;
-        const city = document.getElementsByName('city')[0].value;
-        const province = document.getElementsByName('province')[0].value;
-        const pickupDate = document.getElementsByName('pickupDate')[0].value;
-        const pickupCheckbox = document.getElementsByName('pickupCheckbox')[0].checked ? 'Pick up from shop' : 'Not selected';
-        const cardholderName = document.getElementsByName('cardholderName')[0].value;
-        const cardNumber = document.getElementsByName('cardNumber')[0].value;
-        const code = document.getElementsByName('code')[0].value;
-        const expiryDay = document.getElementsByName('expiryDay')[0].value;
-        const expiryMonth = document.getElementsByName('expiryMonth')[0].value;
     
-        // Create a paragraph element
-        const orderSummary = document.createElement('p');
+    // Reset styles
+    resetStyles();
     
-        // Set the content of the paragraph
-        orderSummary.innerHTML = `
-            <strong>Name:</strong> ${name}<br>
-            <strong>Phone Number:</strong> ${phoneNumber}<br>
-            <strong>Address:</strong> ${address}<br>
-            <strong>City:</strong> ${city}<br>
-            <strong>Province:</strong> ${province}<br>
-            <strong>Pickup Date:</strong> ${pickupDate}<br>
-            <strong>Pickup Option:</strong> ${pickupCheckbox}<br>
-            <strong>Cardholder Name:</strong> ${cardholderName}<br>
-            <strong>Card Number:</strong> ${cardNumber}<br>
-            <strong>Code:</strong> ${code}<br>
-            <strong>Expiry Date:</strong> ${expiryDay}/${expiryMonth}<br>
-        `;
-    
-        // Append the paragraph to the document
-        document.getElementById('history').appendChild(orderSummary);
-    
-    }
-
-     // Reset styles
-     resetStyles();
-
-      // Clear fields
-   clearFields(form);
+    // Clear form fields
+    clearFields(form);
 }
 
 function resetStyles() {
