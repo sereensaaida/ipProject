@@ -161,7 +161,9 @@ function clearFields(form) {
         const cupOptionsContainer = document.getElementById('cupOptions');
 
         cupOptions.forEach(option => {
-            
+            const div = document.createElement('div');
+            div.style.margin = "10px";
+
             const radioInput = document.createElement('input');
             radioInput.type = 'radio';
             radioInput.name = 'cup';
@@ -171,9 +173,13 @@ function clearFields(form) {
             const cupImage = document.createElement('img');
             cupImage.src = option.image;
             cupImage.alt = option.type;
+            cupImage.style.height = "250px";
+            cupImage.style.width = "250px";
 
-            cupOptionsContainer.appendChild(radioInput);
-            cupOptionsContainer.appendChild(cupImage);
+            div.appendChild(radioInput);
+            div.appendChild(cupImage);
+
+            cupOptionsContainer.appendChild(div);
         });
     }
 
@@ -181,6 +187,11 @@ function clearFields(form) {
         const dessertOptionsContainer = document.getElementById('mainOptions');
 
         dessertOptions.forEach(option => {
+
+            const div = document.createElement('div');
+            div.style.margin = "10px";
+            
+
             const radioInput = document.createElement('input');
             radioInput.type = 'radio';
             radioInput.name = 'main';
@@ -190,9 +201,13 @@ function clearFields(form) {
             const mainImage = document.createElement('img');
             mainImage.src = option.image;
             mainImage.alt = option.type;
+            mainImage.style.height = "300px";
+            mainImage.style.width = "300px";
 
-            dessertOptionsContainer.appendChild(radioInput);
-            dessertOptionsContainer.appendChild(mainImage);
+            div.appendChild(radioInput);
+            div.appendChild(mainImage);
+
+            dessertOptionsContainer.appendChild(div);
         });
     }
 
@@ -200,6 +215,9 @@ function clearFields(form) {
         const toppingOptionsContainer = document.getElementById('toppingOptions');
 
         toppingOptions.forEach(option => {
+            const div = document.createElement('div');
+            div.style.margin = "10px";
+
             const radioInput = document.createElement('input');
             radioInput.type = 'radio';
             radioInput.name = 'top';
@@ -209,9 +227,13 @@ function clearFields(form) {
             const topImage = document.createElement('img');
             topImage.src = option.image;
             topImage.alt = option.type;
+            topImage.style.height = "200px";
+            topImage.style.width = "200px";
 
-            toppingOptionsContainer.appendChild(radioInput);
-            toppingOptionsContainer.appendChild(topImage);
+            div.appendChild(radioInput);
+            div.appendChild(topImage);
+
+            toppingOptionsContainer.appendChild(div);
         });
     }
 

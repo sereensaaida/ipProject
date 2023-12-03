@@ -36,6 +36,7 @@ nav a:hover{
 
     nav a {
         margin: 2vh 0;
+        
     }
 }
 
@@ -184,13 +185,7 @@ img{
 }
 
 @media screen and (max-width: 850px){
-    
-    nav{
-        height:32vh;
-    }
-    nav a{
-        width: 100%;
-    }
+   
     img{
         margin-left: 20px;
     }
