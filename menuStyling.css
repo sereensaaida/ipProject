@@ -26,19 +26,6 @@ nav a:hover{
 }
 
 
-/*Configuration for a smaller screen view*/
-@media (max-width: 768px) {
-    nav {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 2vh 0;
-    }
-}
 
 /*Setting the background as well as configuration for the body*/
 body{
@@ -190,11 +177,44 @@ h1:hover{
     margin-top: 5px; /* Add space between images and radio buttons */
 }
 
+#cupOptions{
+    margin-bottom: 30px;
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .cupRow input, .mainRow input, .toppingRow input {
         order: 0; /* Reset order for smaller screens */
         margin-top: 10px; /* Adjust space for smaller screens */
+    }
+
+    nav {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 2vh 0;
+    }
+}
+
+@media screen and (max-width: 850px){
+    
+
+    img{
+        margin-left: 20px;
+    }
+    .homePageBtn{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    nav a{
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
