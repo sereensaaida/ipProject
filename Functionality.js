@@ -223,9 +223,16 @@ function clearFields(form) {
     //function to load doc (AJAX)
     function loadDoc(){
         var xhttp = new XMLHttpRequest();
-        xhttp.open("GET","infoAjax.txt", false);
+        xhttp.open("GET","homeAjax.txt", false);
         xhttp.send();
         document.getElementById("homeInformation").innerHTML = xhttp.responseText;
+    }
+
+    window.onload = function loadAboutTxt(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET","aboutAboutAjax.txt", false);
+        xhttp.send();
+        document.getElementById("aboutAboutInformation").innerHTML = xhttp.responseText;
     }
 
     
@@ -235,4 +242,3 @@ function clearFields(form) {
     generateCupOptions();
     generateDessertOptions();
     generateToppingOptions();
-    loadDoc();

@@ -97,6 +97,8 @@ h2:hover{
     margin: 10px;
     max-width: 100%; 
   height: auto; 
+  margin-bottom: 4vh; /* Adjust the margin as needed */
+
 }
 
 /*Topping dimensions*/
@@ -112,8 +114,10 @@ h2:hover{
 
 .toppingRow > img{
     width: 15%;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 6vh;
+    margin-right: 2vh;
+    margin-bottom: 2vh; /* Adjust the margin as needed */
+
 }
 
 /*css for the confirm container*/
@@ -186,9 +190,7 @@ h1:hover{
     margin-top: 5px; /* Add space between images and radio buttons */
 }
 
-radio{
-    margin-top: 10vh;
-}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .cupRow input, .mainRow input, .toppingRow input {
