@@ -239,12 +239,6 @@ function clearFields(form) {
         document.getElementById("homeInformation").innerHTML = xhttp.responseText;
     }
 
-    window.onload = function loadAboutTxt(){
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("GET","aboutAboutAjax.txt", false);
-        xhttp.send();
-        document.getElementById("aboutAboutInformation").innerHTML = xhttp.responseText;
-    }
 
     
 

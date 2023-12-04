@@ -169,7 +169,7 @@ input[type=text], input[type=date], input[type=tel]{
     }
     #history{
         width: 0%;
-       background: transparent;
+      
 
     }
 }
@@ -185,7 +185,7 @@ input[type=text], input[type=date], input[type=tel]{
     }
     #history{
         width: 70%;
-        background: transparent;
+     
 
     }
 }
@@ -196,7 +196,6 @@ input[type=text], input[type=date], input[type=tel]{
     }
     #history{
         width: 80%;
-        background: transparent;
 
     }
 }
@@ -210,7 +209,6 @@ input[type=text], input[type=date], input[type=tel]{
 
     #history{
         width: 90%;
-        background: transparent;
 
     }
 }
@@ -226,10 +224,6 @@ input[type=text], input[type=date], input[type=tel]{
     background-color: #FFFAEC;
     color: #F55A7A;
     border-radius: 20px;
-    position: static;
-   
-
-
    
 }
 
