@@ -168,7 +168,9 @@ input[type=text], input[type=date], input[type=tel]{
 
     }
     #history{
-        width: 60%;
+        width: 0%;
+       background: transparent;
+
     }
 }
 @media screen and (max-width: 1200px){
@@ -183,6 +185,8 @@ input[type=text], input[type=date], input[type=tel]{
     }
     #history{
         width: 70%;
+        background: transparent;
+
     }
 }
 @media screen and (max-width: 1100px){
@@ -192,6 +196,8 @@ input[type=text], input[type=date], input[type=tel]{
     }
     #history{
         width: 80%;
+        background: transparent;
+
     }
 }
 @media screen and (max-width: 850px){
@@ -204,22 +210,28 @@ input[type=text], input[type=date], input[type=tel]{
 
     #history{
         width: 90%;
+        background: transparent;
+
     }
 }
 
 #history {
     width:70%;
-    height: 20vh;
+    height: 10%;
     margin-top: 55%;
+    margin-bottom: 5%;
     margin-left: 15%;
-    margin-bottom: 10vh;
     padding: 10px;
     text-align: center;
     background-color: #FFFAEC;
     color: #F55A7A;
     border-radius: 20px;
+    position: static;
+   
+
 
    
 }
+
 
 

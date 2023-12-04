@@ -59,15 +59,19 @@
             <button type="button" id="confirm" onclick="confirmOrder()">Confirm payment</button>
         
         </form>
-    </div>
 
+       
+    </div>
+   
 
     <!--division to print the order history-->
     
     
     </div>
     
-   
+    <div id="history">
+        <h3>Order History</h3>
+    </div>
 </div>
 
 <script>
@@ -80,8 +84,6 @@
     document.getElementById('addedItems').innerText = `${items || 'No items selected'}`;
     document.getElementById('totalPrice').innerText = `Total Cost: ${totalCost || '0.00'}`;
 </script>
-<div id="history">
-    <h3>Order History</h3>
-</div>
+
 </body>
 </html>

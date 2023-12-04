@@ -47,25 +47,18 @@ function confirmOrder() {
         price: document.getElementById("totalPrice").textContent,
         name: name,
         phoneNumber: phoneNumber,
-        address: address,
-        city: city,
-        province: province,
-        pickupDate: pickupDate,
+        
         pickupOption: pickupCheckbox
     };
     
     // Convert the JSON object to a string
-    const jsonString = `{
-        "order": "${document.getElementById("addedItems").textContent}",
-        "price": "${document.getElementById("totalPrice").textContent}",
-        "name": "${name}",
-        "phoneNumber": "${phoneNumber}",
-        "address": "${address}",
-        "city": "${city}",
-        "province": "${province}",
-        "pickupDate": "${pickupDate}",
-        "pickupOption": "${pickupCheckbox}"
-    }`;
+    const jsonString = `
+        order: ${document.getElementById("addedItems").textContent},
+        price: ${document.getElementById("totalPrice").textContent},
+        name: ${name},
+        phoneNumber: ${phoneNumber},
+        pickupOption: ${pickupCheckbox}
+    `;
     
     // Create a paragraph element
     const par = document.createElement("p");
