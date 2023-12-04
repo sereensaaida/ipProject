@@ -1,3 +1,18 @@
+
+/*-------------------------------------------------------
+Final Project
+Written by: Sereen Saaida (22) & Valeriya Gergelyuk
+*“Responsibilities:
+- confirmOrder(), resetStyles(), highlightMandatoryFields(), clearFields(): Sereen
+- addToCart() calculating: Valeriya
+- addToCart() finishing touches: Sereen
+- taking the json object and adding to the menu: Valeriya
+- retrieving from ajax: Sereen”
+For “Internet Programming” Section 1– Fall 2023
+--------------------------------------------------------*/
+
+
+
 //Script For the Forms part of the order Page!
 function confirmOrder() {
    
